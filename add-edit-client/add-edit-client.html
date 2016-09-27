@@ -1,0 +1,18 @@
+<h1>{{header}}</h1>
+<hr/>
+
+<form role="form" id="add-client" ng-submit="saveClient()">
+	<div class="form-group">
+		<label>Client ID</label>
+		<input class="form-control" type="text" ng-model="clientData.clientNo"></input>
+	</div>
+	<div class="form-group">
+		<label>First Name</label>
+		<input class="form-control" type="text" ng-model="clientData.firstName"></input>
+	</div>
+	<div class="form-group">
+		<label>Last Name</label>
+		<input class="form-control" type="text" ng-model="clientData.lastName"></input>
+	</div>		
+	<input type="submit" class="btn btn-success" value="Save"></input>
+</form>
